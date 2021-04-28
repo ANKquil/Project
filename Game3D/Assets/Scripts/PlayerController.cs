@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     // Параметры игрока
     float Speed = 50f;
+    float JumpForce = 200f;
+    public bool _isGrounded;
 
     // Функция Start (Unity)
     void Start()
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         MovementLogic();
+        JumpLogic();
     }
 
     // Физика движения персонажа
@@ -32,5 +35,14 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(Time.deltaTime * 2, 0.0f, 0 /* Speed * Time.deltaTime * 2*/);
 
         _rb.AddForce(movement);
+    }
+
+    // Физика прыжка
+    private void JumpLogic()
+    {
+        if (_isGrounded)
+        {
+            _rb.AddForce(Vector3.up * JumpForce + Vector3.forward * JumpForce * 0.75f);
+        }
     }
 }
