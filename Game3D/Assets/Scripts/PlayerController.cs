@@ -16,6 +16,14 @@ public class PlayerController : MonoBehaviour
     float JumpForce = 200f;
     public bool _isGrounded;
 
+    // Уровень
+    Vector3 lastJump = new Vector3(0, 0, 0);
+
+    // Touch
+    Vector2 startPos;
+    Vector2 direction;
+    bool directionChosen;
+
     // Функция Start (Unity)
     void Start()
     {
@@ -25,14 +33,41 @@ public class PlayerController : MonoBehaviour
     // Функция FixedUpdate (Unity)
     void FixedUpdate()
     {
-        MovementLogic();
+        float moveHorizontal = TouchCheck();
+        MovementLogic(moveHorizontal);
         JumpLogic();
     }
 
-    // Физика движения персонажа
-    private void MovementLogic()
+    // Функция проверки Touch
+    private float TouchCheck()
     {
-        Vector3 movement = new Vector3(Time.deltaTime * Speed / 10, 0.0f, Speed * Time.deltaTime * 2);
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    startPos.x = touch.position.x;
+                    directionChosen = false;
+                    break;
+
+                case TouchPhase.Moved:
+                    direction.x = touch.position.x - startPos.x;
+                    break;
+
+                case TouchPhase.Ended:
+                    directionChosen = true;
+                    break;
+            }
+        }
+        if (directionChosen) { }
+        return direction.x;
+    }
+
+    // Физика движения персонажа
+    private void MovementLogic(float moveHorizontal)
+    {
+        Vector3 movement = new Vector3(Time.deltaTime * moveHorizontal, 0, Speed * Time.deltaTime * 2);
 
         _rb.AddForce(movement);
     }
