@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Физика движения персонажа
     private void MovementLogic()
     {
-        Vector3 movement = new Vector3(Time.deltaTime * 2, 0.0f, 0 /* Speed * Time.deltaTime * 2*/);
+        Vector3 movement = new Vector3(Time.deltaTime * Speed / 10, 0.0f, Speed * Time.deltaTime * 2);
 
         _rb.AddForce(movement);
     }
@@ -43,6 +43,27 @@ public class PlayerController : MonoBehaviour
         if (_isGrounded)
         {
             _rb.AddForce(Vector3.up * JumpForce + Vector3.forward * JumpForce * 0.75f);
+        }
+    }
+
+    // Функция проверки на слияние коллизий (Unity)
+    void OnCollisionEnter(Collision collision)
+    {
+        IsGroundedUpate(collision, true);
+    }
+
+    // Функция проверки на разделение коллизий (Unity)
+    void OnCollisionExit(Collision collision)
+    {
+        IsGroundedUpate(collision, false);
+    }
+
+    // Функция использования коллизий
+    private void IsGroundedUpate(Collision collision, bool value)
+    {
+        if (collision.gameObject.tag == ("Ground"))
+        {
+            _isGrounded = value;
         }
     }
 }
