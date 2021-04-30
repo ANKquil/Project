@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     // Объекты
     public GameObject player;
-    List<GameObject> listGrounds = new List<GameObject>();
+    public List<GameObject> listGrounds = new List<GameObject>();
 
     // Компоненты
     private Transform playerTransform;
