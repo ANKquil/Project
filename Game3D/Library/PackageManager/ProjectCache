@@ -5,26 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 637553674233883924
-    m_Hash: 1857255145
-=======
-      ticks: 637553586049816735
+      ticks: 637553678761156412
     m_Hash: 1015990397
->>>>>>> main
   m_LockFileStatus:
     m_FilePath: C:/Users/ANKquil/project/Game3D/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 637553674420771467
-    m_Hash: 38571225
-=======
-      ticks: 637553672616978364
+      ticks: 637553680366824522
     m_Hash: 2276825262
->>>>>>> main
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
