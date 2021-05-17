@@ -1,0 +1,97 @@
+[33mcommit ebbeec31f75c1bec8b09043555338f7e0ffb9b5d[m[33m ([m[1;36mHEAD -> [m[1;32mprogrammer[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 22:26:44 2021 +0300
+
+    Add CamController for main camera and change come logs
+
+[33mcommit e51b224fd690bc3abe97d65b8f4432ab2c798c16[m
+Merge: 1bb9ec5 95bb7f7
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 11:27:01 2021 +0300
+
+    Merge programmer & main
+
+[33mcommit 1bb9ec5811157ce4ba11f537af17e69c8c897f5c[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 11:24:22 2021 +0300
+
+    Change some logs
+
+[33mcommit 95bb7f7932831786b29e3dc59997bee0f0dc2551[m[33m ([m[1;32mmain[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 11:16:50 2021 +0300
+
+    Change some logs
+
+[33mcommit 95ff48abf9f39d79531958e4235427a42c687ea6[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 0b13d35 1078bb1
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 09:00:43 2021 +0300
+
+    Merge all branches to create version 0.01 of the project
+
+[33mcommit 1078bb1fe4fe68040c1321d96fd64f7fc44cd17a[m[33m ([m[1;32mdesigner[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 08:47:21 2021 +0300
+
+    Change some logs
+
+[33mcommit 0b13d355ef25efc354ef5a68f6cb5d9cb5f4ce01[m[33m ([m[1;33mtag: v0.01[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 08:45:38 2021 +0300
+
+    Change some logs
+
+[33mcommit fa0bf64492ea3ad36b111927171923068537aa0d[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Fri Apr 30 08:40:08 2021 +0300
+
+    Add post-processing filters and layer PostProcessing
+
+[33mcommit 82144683a7383ce1fbf71e7f42e4c664f1c28560[m[33m ([m[1;31morigin/designer[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:48:54 2021 +0300
+
+    Add post-processing and correct SceneGame
+
+[33mcommit b66a64d62112238e50f394edb98d9ceff51eea44[m[33m ([m[1;31morigin/programmer[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:39:34 2021 +0300
+
+    Add Score logic, check player position, instantate objects for GameController
+
+[33mcommit 161f2844ec6e850770dbea9a391822dc13e32ad4[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:28:30 2021 +0300
+
+    Add touchs physics and change jump physics for Player
+
+[33mcommit 4b557583f24535abf920b22ee7ee43682b31823c[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:23:22 2021 +0300
+
+    Add collision physics and change move physics for Player
+
+[33mcommit 52196452851831290b61c29f6c94e99d71771b49[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:18:52 2021 +0300
+
+    Add Jump physics for Player
+
+[33mcommit 102633bd00498c9cecc3ddafc1c99a39c5920f74[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:14:43 2021 +0300
+
+    Rename GameController and add move physics for Player
+
+[33mcommit 09de176824e03690f32150bf721d475bf7e87875[m[33m ([m[1;31morigin/gamedesigner[m[33m, [m[1;32mgamedesigner[m[33m)[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 07:04:35 2021 +0300
+
+    Create SceneGame and add all simple objects
+
+[33mcommit c4f068e6586a54bb69865b33b51219b4158dbb5a[m
+Author: ANKquil <thekolinfell@gmail.com>
+Date:   Wed Apr 28 06:46:40 2021 +0300
+
+    Create simple unity project 3D

@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\CamController.cs" />
+    <Compile Include="Assets\Scripts\CamController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
